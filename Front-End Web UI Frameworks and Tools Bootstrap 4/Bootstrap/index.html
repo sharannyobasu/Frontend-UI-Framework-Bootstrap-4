@@ -63,9 +63,27 @@
               >
             </li>
           </ul>
+          <span class="navbar-text">
+            <a data-toggle="modal" data-target="#loginModal" href="">
+              <span class="fa fa-sign-in"></span> Login
+            </a>
+          </span>
         </div>
       </div>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <button class="close" type="button" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
     <header class="jumbotron">
       <div class="container">
         <div class="row row header">
@@ -80,8 +98,17 @@
           <div class="col-12 col-sm-3 align-items-centre">
             <img src="img/logo.png" alt="Logo" class="img-fluid" />
           </div>
-          <div class="col-12 col-sm-3 align-items-centre vertical-center">
-            <button class="btn btn-lg btn-warning vertical-center mt-5 col-12"><a href="#carddown" class="text-dark">Reserve a table</a></button>
+          <div class="col-12 col-sm align-self-centre">
+            <a
+              role="button"
+              href="#carddown"
+              class="text-white btn btn-block btn-warning nav-link"
+              data-toggle="tooltip"
+              data-html="true"
+              title="Or call us at<br><strong>7687856094</strong>"
+              data-placement="bottom"
+              >Reserve a table</a
+            >
           </div>
         </div>
       </div>
@@ -126,14 +153,15 @@
             />
             <div class="media-body">
               <h2 class="mt-0">
-                Weekend Grand Buffet<span class="badge badge-danger ml-3">NEW</span>
-                
+                Weekend Grand Buffet<span class="badge badge-danger ml-3"
+                  >NEW</span
+                >
               </h2>
               <p>
-                Featuring mouthwatering combinations with a choice of five different
-                salads, six enticing appetizers, six main entrees and five choicest
-                desserts. Free flowing bubbly and soft drinks. All for just $19.99
-                per person
+                Featuring mouthwatering combinations with a choice of five
+                different salads, six enticing appetizers, six main entrees and
+                five choicest desserts. Free flowing bubbly and soft drinks. All
+                for just $19.99 per person
               </p>
             </div>
           </div>
@@ -181,7 +209,7 @@
       </div>
     </div>
     <div class="col-lg-8 container">
-      <div class="card mb-4 " id="carddown">
+      <div class="card mb-4" id="carddown">
         <h3 class="card-header bg-warning text-white">
           Reserve a Table
         </h3>
@@ -189,65 +217,61 @@
           <div class="col-12 col-md-9">
             <form action="">
               <div class="form-group row">
-                <label for="firstname" class="col-md-2 col-form-label blockquote"
+                <label
+                  for="firstname"
+                  class="col-md-2 col-form-label blockquote"
                   >Number of guests
                 </label>
                 <div class="col-md-10 col-7">
                   <input
-                      type="radio"
-                      class="form-check-inline mr-1"
-                      style="margin-top: 13px;"
-                      name="approve"
-                      id="approve"
-                      value=""
-                    />
-                    <label for="approve" class="form-check-label">1
-                    </label>
-                    <input
-                      type="radio"
-                      class="form-check-inline mr-1 ml-2"
-                      name="approve"
-                      id="approve"
-                      value=""
-                    />
-                    <label for="approve" class="form-check-label">2
-                    </label>
-                    <input
-                      type="radio"
-                      class="form-check-inline mr-1 ml-2"
-                      name="approve"
-                      id="approve"
-                      value=""
-                    />
-                    <label for="approve" class="form-check-label">3
-                    </label>
-                    <input
-                      type="radio"
-                      class="form-check-inline mr-1 ml-2"
-                      name="approve"
-                      id="approve"
-                      value=""
-                    />
-                    <label for="approve" class="form-check-label">4
-                    </label>
-                    <input
-                      type="radio"
-                      class="form-check-inline mr-1 ml-2"
-                      name="approve"
-                      id="approve"
-                      value=""
-                    />
-                    <label for="approve" class="form-check-label">5
-                    </label>
-                    <input
-                      type="radio"
-                      class="form-check-inline mr-1 ml-2"
-                      name="approve"
-                      id="approve"
-                      value=""
-                    />
-                    <label for="approve" class="form-check-label">6
-                    </label>
+                    type="radio"
+                    class="form-check-inline mr-1"
+                    style="margin-top: 13px;"
+                    name="approve"
+                    id="approve"
+                    value=""
+                  />
+                  <label for="approve" class="form-check-label">1 </label>
+                  <input
+                    type="radio"
+                    class="form-check-inline mr-1 ml-2"
+                    name="approve"
+                    id="approve"
+                    value=""
+                  />
+                  <label for="approve" class="form-check-label">2 </label>
+                  <input
+                    type="radio"
+                    class="form-check-inline mr-1 ml-2"
+                    name="approve"
+                    id="approve"
+                    value=""
+                  />
+                  <label for="approve" class="form-check-label">3 </label>
+                  <input
+                    type="radio"
+                    class="form-check-inline mr-1 ml-2"
+                    name="approve"
+                    id="approve"
+                    value=""
+                  />
+                  <label for="approve" class="form-check-label">4 </label>
+                  <input
+                    type="radio"
+                    class="form-check-inline mr-1 ml-2"
+                    name="approve"
+                    id="approve"
+                    value=""
+                  />
+                  <label for="approve" class="form-check-label">5 </label>
+                  <input
+                    type="radio"
+                    class="form-check-inline mr-1 ml-2"
+                    name="approve"
+                    id="approve"
+                    value=""
+                  />
+                  <label for="approve" class="form-check-label">6 </label>
                 </div>
               </div>
               <div class="form-group row">
@@ -275,14 +299,12 @@
                   />
                 </div>
               </div>
-              </div>
+
               <div class="form-group row">
-                
-                  <div class="col-md-12 offset-md-2 ml-3">
-                      <button type="submit" class="btn btn-primary">Reserve</button>
-                  </div>
-                  </div>
+                <div class="col-md-12 offset-md-2 ml-3">
+                  <button type="submit" class="btn btn-primary">Reserve</button>
                 </div>
+              </div>
             </form>
           </div>
         </div>
@@ -353,5 +375,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
