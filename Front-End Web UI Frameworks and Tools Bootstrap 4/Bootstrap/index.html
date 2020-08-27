@@ -176,7 +176,7 @@
                     <input
                       type="radio"
                       class="form-check-inline mr-1"
-                      style="margin-top: 13px;"
+                      style="margin-top: 13px"
                       name="approve"
                       id="approve"
                       value=""
@@ -399,6 +399,14 @@
             >
               <span class="carousel-control-next-icon"> </span>
             </a>
+            <div class="btn-group" id="carouselButton">
+              <button class="btn btn-danger btn-sm" id="carousel-pause">
+                <span class="fa fa-pause"></span>
+              </button>
+              <button class="btn btn-danger btn-sm" id="carousel-play">
+                <span class="fa fa-play"></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -482,9 +490,7 @@
     </div>
     <div class="col-lg-8 container">
       <div class="card mb-4" id="carddown">
-        <h3 class="card-header bg-warning text-white">
-          Reserve a Table
-        </h3>
+        <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
         <div class="card-body">
           <div class="col-12 col-md-9">
             <form action="">
@@ -498,7 +504,7 @@
                   <input
                     type="radio"
                     class="form-check-inline mr-1"
-                    style="margin-top: 13px;"
+                    style="margin-top: 13px"
                     name="approve"
                     id="approve"
                     value=""
@@ -647,5 +653,16 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#mycarousel').carousel({ interval: 2000 });
+        $('#carousel-pause').click(function () {
+          $('#mycarousel').carousel('pause');
+        });
+        $('#carousel-play').click(function () {
+          $('#mycarousel').carousel('cycle');
+        });
+      });
+    </script>
   </body>
 </html>
