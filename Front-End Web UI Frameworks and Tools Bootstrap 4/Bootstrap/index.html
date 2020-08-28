@@ -64,9 +64,7 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal" href="">
-              <span class="fa fa-sign-in"></span> Login
-            </a>
+            <a id="loginButton"> <span class="fa fa-sign-in"></span> Login </a>
           </span>
         </div>
       </div>
@@ -148,8 +146,7 @@
               role="button"
               href="#carddown"
               class="text-white btn btn-block btn-warning nav-link"
-              data-toggle="modal"
-              data-target="#buttonModal"
+              id="ReserveButton"
               >Reserve a table</a
             >
           </div>
@@ -664,6 +661,17 @@
             $('#carouselButton').children('span').removeClass('fa-play');
             $('#carouselButton').children('span').addClass('fa-pause');
           }
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('#ReserveButton').click(function () {
+          $('#buttonModal').modal('show');
+        });
+        $('#loginButton').click(function () {
+          $('#loginModal').modal('show');
         });
       });
     </script>
